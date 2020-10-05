@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    padding: 0 15px;
+}
+.head {
+    width: auto;
+    height: 100px;
+    min-width: 1200px;
+    
+    background-color: rgb(153, 218, 218);
+}
+.header {
+    position: relative;
+    top: -50px;
+    width: calc(100% - 33.66%);
+    height: 100px;
+    margin: 0 auto;
+    padding-top: 30px;
+    
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgb(85, 161, 161);   
+}
+.input {
+    width: calc(100% - 33.66%);
+    max-width: 800px;
+    height: auto;
+    margin-top: 0px;
+    margin: 0 auto;
+    text-align: center;
+}
+#text {
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    height: 40px;
+    font-size: 25px;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid rgb(82, 200, 211);
+    background: linear-gradient(rgb(255, 255, 255), rgba(131, 241, 251, 0.342));
+}
+#text:focus {
+    outline: 0px;
+}
+#button {
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(95, 167, 173, 0.342);
+}
+#button:hover {
+    background-color: rgba(95, 166, 173, 0.657);
+    transform: scale(1.1);
+}
+#button:focus {
+    outline: 0px;
+}
+.tasks {
+    height: auto;
+    margin-top: 30px;
+
+    /* background-color: thistle; */
+}
+li {
+    position: relative;
+    width: auto;
+    max-width: 900px;
+    height: 50px;
+    margin: 10px auto;
+    list-style: none;
+    padding: 14px;
+    padding-left: 50px;
+
+    background-color: #ed9121;
+    font-size: 20px;
+    /* font-weight: bold; */
+    font-family: "Arial", sans-serif;
+}
+.trashButton {
+    position: absolute;
+    width: 30px;
+    right: -45px;
+    border: none;
+    font-size: 20px;
+    background-color: white;
+}
+.trashButton:focus {
+    outline: 0px; 
+}
+.trashButton:hover {
+    transform: scale(1.3);
+}
+.trashGone {
+    /* display: none; */
+    transform: translateX(100vw);
+    opacity: 0.2;
+    transition: 0.8s ease-out;
+} 
+.chckbx {
+    position: absolute;
+    left: 20px;
+    top: 17px;
+    width: 15px;
+    height: 15px;
+    border: none;
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
