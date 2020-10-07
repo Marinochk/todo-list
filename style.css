@@ -69,8 +69,11 @@
 li {
     position: relative;
     width: auto;
+    display: flex;
+    align-items: center;
+    word-break: break-all;
     max-width: 900px;
-    height: 50px;
+    min-height: 50px;
     margin: 10px auto;
     list-style: none;
     padding: 14px;
@@ -96,21 +99,38 @@ li {
     transform: scale(1.3);
 }
 .trashGone {
-    /* display: none; */
     transform: translateX(100vw);
     opacity: 0.2;
-    transition: 0.8s ease-out;
+    transition: 0.5s ease-out;
 } 
 .chckbx {
+    top: 50%;
+    transform: translateY(-50%);
     position: absolute;
     left: 20px;
-    top: 17px;
     width: 15px;
     height: 15px;
     border: none;
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1060px) {
+li {
+    width: calc(100% - 60px);
+    max-width: 580px;
+}
+}
 
+@media screen and (max-width: 768px) {
+    li {
+        width: calc(100% - 60px);
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    li {
+        width: calc(100% - 60px);
+        max-width: 310px;
+    }
 }

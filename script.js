@@ -46,7 +46,6 @@ function addTask() {
 }
 
 textField.addEventListener('keyup', (evt) => {
-    console.info(evt.key);
     if (evt.key === ENTER_KEY) {
         evt.preventDefault();
         addTask();
